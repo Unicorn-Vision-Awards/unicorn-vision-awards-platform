@@ -3,10 +3,6 @@
     {
       "name": "root",
       "path": "."
-    },
-    {
-      "name": "website",
-      "path": "website"
     }
   ],
   "settings": {
@@ -16,7 +12,6 @@
       ".next": true,
       ".open-next": true,
       ".wrangler": true,
-      "website/": true,
       "dist/": true
     },
     "search.exclude": {
