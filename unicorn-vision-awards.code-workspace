@@ -1,0 +1,60 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "website",
+      "path": "website"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules/": true,
+      "build/": true,
+      ".next": true,
+      ".open-next": true,
+      ".wrangler": true,
+      "website/": true,
+      "dist/": true
+    },
+    "search.exclude": {
+      "node_modules/": true,
+      "**/dist": true,
+      "**/package-lock.json": true,
+      "**/*.log": true,
+      "**/CHANGELOG.md": true
+    },
+    "editor.rulers": [80, 100, 120],
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.formatDocument": "explicit",
+      "source.addMissingImports": "explicit",
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.formatOnSaveMode": "file",
+    "material-icon-theme.folders.associations": {
+      "frontend": "react",
+      "backend": "server",
+      "terraform": "terraform"
+    },
+    "editor.defaultFormatter": "biomejs.biome",
+    "[markdown]": {
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[yaml][github-actions-workflow]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml",
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    }
+  }
+}

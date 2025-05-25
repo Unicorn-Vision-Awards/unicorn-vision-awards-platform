@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"github.vscode-github-actions",
+		"redhat.vscode-yaml",
+		"dsznajder.es7-react-js-snippets",
+		"ms-vscode.vscode-typescript-next",
+		"redhat.vscode-yaml",
+		"yzhang.markdown-all-in-one",
+		"PKief.material-icon-theme",
+		"bradlc.vscode-tailwindcss"
+	]
+}
