@@ -1,19 +1,46 @@
-import { UVA2025eventDateFormatted } from "@/src/constants/event-2025";
-import { siteTitle } from "@/src/constants/site";
+import clsx from "clsx";
 import { Btn } from "../../button/btn";
 
-export const HomepageHero = () => {
+interface IHomepageHeroProps {
+	children: React.ReactNode;
+	eventDate: string;
+	btnText: string;
+	btnHref: string;
+}
+
+export const HomepageHero = ({
+	children,
+	eventDate,
+	btnText,
+	btnHref,
+}: IHomepageHeroProps) => {
 	return (
 		<section className="bg-vision-red">
-			<div className="container mx-auto py-48 text-center">
+			<div
+				className={clsx(
+					"container mx-auto py-40 lg:py-48 text-center",
+					"max-w-xs sm:max-w-xl lg:max-w-5xl",
+				)}
+			>
+				<h1
+					className={clsx(
+						"text-white font-extrabold text-balance leading-none",
+						"text-4xl sm:text-7xl lg:text-9xl",
+						"mb-4 lg:mb-8",
+					)}
+				>
+					{children}
+				</h1>
+				<h2
+					className={clsx(
+						"text-white text-2xl lg:text-4xl font-medium",
+						"mb-16",
+					)}
+				>
+					{eventDate}
+				</h2>
 				<div>
-					<h1 className="text-white text-9xl font-extrabold text-balance mb-8 leading-none">
-						{siteTitle} 2025
-					</h1>
-					<h2 className="text-white text-4xl font-bold mb-16">
-						{UVA2025eventDateFormatted}
-					</h2>
-					<Btn href="/">Submit Your Vision</Btn>
+					<Btn href={btnHref}>{btnText}</Btn>
 				</div>
 			</div>
 		</section>

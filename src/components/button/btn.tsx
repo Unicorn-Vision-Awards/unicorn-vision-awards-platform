@@ -11,8 +11,14 @@ export const Btn = ({ children, href }: IBtnProps) => {
 		<Link
 			href={href}
 			className={clsx(
-				"px-12 py-6 rounded-sm",
-				"text-lg font-bold",
+				"inline-flex",
+				"px-4 md:px-8 lg:px-12",
+				"py-3 md:py-4 lg:py-6",
+				"leading-[20px]",
+				"border-none",
+				"rounded-sm",
+				"overflow-hidden",
+				"text-base lg:text-lg font-bold",
 				"transition-all duration-200",
 				"bg-white text-dark-cocoa",
 				"hover:bg-dark-cocoa hover:text-white",
