@@ -1,4 +1,3 @@
-import { Header } from "@/src/components/header";
 import "@/src/styles/globals.css";
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
@@ -21,10 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" dir="ltr" className={bricolageGrotesque.className}>
-			<body className="antialiased">
-				<Header />
-				{children}
-			</body>
+			<body className="antialiased">{children}</body>
 		</html>
 	);
 }

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Marquee from "react-fast-marquee";
 
-interface ITextMoverProps {
+interface IMarqueeEffectProps {
 	text?: string[];
 	speed?: number;
 	separator?: string;
@@ -9,13 +9,13 @@ interface ITextMoverProps {
 	gradientColor?: string;
 }
 
-export const TextMover = ({
+export const MarqueeEffect = ({
 	text,
 	separator = " • ",
 	speed = 50,
 	direction = "right",
 	gradientColor,
-}: ITextMoverProps) => {
+}: IMarqueeEffectProps) => {
 	const marqueeText = text?.join(separator);
 
 	return (
