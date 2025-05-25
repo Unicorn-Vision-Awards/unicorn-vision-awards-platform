@@ -16,12 +16,14 @@ export const MarqueeEffect = ({
 	direction = "right",
 	gradientColor,
 }: IMarqueeEffectProps) => {
-	const marqueeText = text?.join(separator);
+	// const marqueeText = ` • ${text?.join(separator)} `;
+	const marqueeText = text?.map((item) => ` • ${item} `).join("");
 
 	return (
 		<div
 			className={clsx(
 				"overflow-hidden whitespace-nowrap w-full",
+				"flex gap-4",
 				"bg-dark-cocoa",
 				"font-bold",
 				"leading-relaxed",

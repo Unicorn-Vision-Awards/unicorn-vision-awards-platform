@@ -6,10 +6,10 @@ export const HomepageMarquee = () => {
 		"Fintech",
 		"EdTech",
 		"HealthTech",
-		"SaaS",
+		"Biotech",
 		"E-commerce",
 		"Cybersecurity",
-		"Biotech",
+		"SaaS",
 		"Marketplace",
 	];
 
@@ -23,7 +23,6 @@ export const HomepageMarquee = () => {
 		"Launch",
 		"Grow",
 		"Inspire",
-		"Create",
 	];
 
 	return (

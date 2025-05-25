@@ -21,7 +21,7 @@ export const HomepageHero = ({
 					"container mx-auto py-40 lg:py-48 text-center",
 					"max-w-xs sm:max-w-xl lg:max-w-5xl",
 					"flex flex-col items-center",
-					"gap-4 lg:gap-8",
+					"gap-6 lg:gap-8",
 				)}
 			>
 				<h1
