@@ -20,23 +20,19 @@ export const HomepageHero = ({
 				className={clsx(
 					"container mx-auto py-40 lg:py-48 text-center",
 					"max-w-xs sm:max-w-xl lg:max-w-5xl",
+					"flex flex-col items-center",
+					"gap-4 lg:gap-8",
 				)}
 			>
 				<h1
 					className={clsx(
 						"text-white font-extrabold text-balance leading-none",
 						"text-4xl sm:text-7xl lg:text-9xl",
-						"mb-4 lg:mb-8",
 					)}
 				>
 					{children}
 				</h1>
-				<h2
-					className={clsx(
-						"text-white text-2xl lg:text-4xl font-medium",
-						"mb-16",
-					)}
-				>
+				<h2 className={clsx("text-white text-2xl lg:text-4xl font-medium")}>
 					{eventDate}
 				</h2>
 				<div>
