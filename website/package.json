@@ -1,0 +1,33 @@
+{
+	"name": "website",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"check": "biome check",
+		"check:fix": "biome check --write",
+		"format": "biome format .",
+		"format:fix": "biome format . --write",
+		"lint:": "biome lint",
+		"lint:fix": "biome lint --fix",
+		"lint:fix:unsafe": "biome lint --fix --unsafe"
+	},
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"clsx": "^2.1.1",
+		"next": "15.3.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"typescript": "^5",
+		"@types/node": "^22",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"@tailwindcss/postcss": "^4",
+		"tailwindcss": "^4"
+	}
+}
