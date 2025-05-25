@@ -22,10 +22,10 @@ export const MarqueeEffect = ({
 		<div
 			className={clsx(
 				"overflow-hidden whitespace-nowrap w-full",
-				"flex",
-				"gap-8",
+				"bg-dark-cocoa",
 				"font-bold",
-				"text-[150px]",
+				"leading-relaxed",
+				"text-5xl sm:text-7xl md:text-9xl lg:text-[150px]",
 				"text-white",
 			)}
 		>

@@ -30,7 +30,7 @@ export const HomepageMarquee = () => {
 		<section>
 			<MarqueeEffect
 				text={categories}
-				speed={200}
+				// speed={200}
 				direction="right"
 				gradientColor="#321e18"
 			/>
