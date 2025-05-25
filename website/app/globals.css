@@ -3,11 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-dark-cocoa: #321e18;
+  --color-vision-red: #e03000;
+  --color-soft-sand: #e3e3d7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-dark-cocoa: var(--color-dark-cocoa);
+  --color-vision-red: var(--color-vision-red);
+  --color-soft-sand: var(--color-soft-sand);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
