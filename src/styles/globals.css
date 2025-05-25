@@ -29,3 +29,10 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.moving-bg {
+  background-image: url(/images/bg-sample1.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
