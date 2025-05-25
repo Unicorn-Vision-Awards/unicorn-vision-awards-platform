@@ -1,51 +1,43 @@
 import clsx from "clsx";
+import Marquee from "react-fast-marquee";
 
 interface ITextMoverProps {
-	text: string;
+	text?: string[];
+	speed?: number;
+	separator?: string;
 	direction?: "left" | "right";
+	gradientColor?: string;
 }
 
 export const TextMover = ({
-	text = "* See You For 2025",
+	text,
+	separator = " • ",
+	speed = 50,
 	direction = "right",
+	gradientColor,
 }: ITextMoverProps) => {
-	const keyframeName = `scroll-${direction}`;
-	const textLength = text.length;
-	const duration = textLength * 2;
+	const marqueeText = text?.join(separator);
 
 	return (
-		<div className="overflow-hidden whitespace-nowrap w-full">
-			<div
-				className={clsx(
-					"flex",
-					"gap-8",
-					"font-bold",
-					"text-[150px]",
-					"text-white",
-				)}
+		<div
+			className={clsx(
+				"overflow-hidden whitespace-nowrap w-full",
+				"flex",
+				"gap-8",
+				"font-bold",
+				"text-[150px]",
+				"text-white",
+			)}
+		>
+			<Marquee
+				direction={direction}
+				speed={speed}
+				gradient={true}
+				gradientColor={gradientColor}
+				gradientWidth={100}
 			>
-				<span
-					style={{
-						animation: `${keyframeName} ${duration}s linear infinite`,
-					}}
-				>
-					{text}
-				</span>
-				<span
-					style={{
-						animation: `${keyframeName} ${duration}s linear infinite`,
-					}}
-				>
-					{text}
-				</span>
-				<span
-					style={{
-						animation: `${keyframeName} ${duration}s linear infinite`,
-					}}
-				>
-					{text}
-				</span>
-			</div>
+				{marqueeText}
+			</Marquee>
 		</div>
 	);
 };
