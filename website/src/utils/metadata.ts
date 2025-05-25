@@ -3,7 +3,7 @@ import {
 	siteSlogan,
 	siteTitle,
 	siteUrl,
-} from "@/constants/site";
+} from "@/src/constants/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

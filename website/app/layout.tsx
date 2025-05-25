@@ -1,15 +1,10 @@
-import { Header } from "@/components/header";
+import { Header } from "@/src/components/header";
+import "@/src/styles/globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Bricolage_Grotesque } from "next/font/google";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const bricolageGrotesque = Bricolage_Grotesque({
+	variable: "--font-bricolage-grotesque",
 	subsets: ["latin"],
 });
 
@@ -25,10 +20,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" dir="ltr">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
+		<html lang="en" dir="ltr" className={bricolageGrotesque.className}>
+			<body className="antialiased">
 				<Header />
 				{children}
 			</body>
